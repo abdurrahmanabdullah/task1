@@ -237,7 +237,7 @@ const Home = () => {
         <Col md={8} lg={6} style={{ padding: "0 15px" }}>
           <div className="logo-container text-center mb-4">
             <img
-              src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-I7L8aUvOUa2Q8ErmIlkSRDvJ.png?st=2024-09-16T08%3A48%3A09Z&se=2024-09-16T10%3A48%3A09Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-09-15T23%3A35%3A43Z&ske=2024-09-16T23%3A35%3A43Z&sks=b&skv=2024-08-04&sig=PU1kzhqfbq0XBlwzCkFENZHKTVDNSOOnqC8xAa6a/JU%3D"
+              src="4.jpg"
               alt="Website Logo"
               className="logo"
               style={{ maxWidth: "100%", height: "auto" }}
@@ -307,10 +307,15 @@ const Home = () => {
             <p
               style={{
                 color: "#a8a032",
-                whiteSpace: "nowrap",
-                overflow: "hidden",
-                textOverflow: "ellipsis",
+                whiteSpace: "normal",
+                overflow: "visible",
+                textOverflow: "clip",
                 display: "block",
+                margin: "0",
+                width: "100%",
+                maxWidth: "600px",
+                whiteSpace: "nowrap",
+                lineHeight: "1.5",
               }}
             >
               MegaPersonals is restricted to persons 18 years of age or older*
@@ -346,6 +351,8 @@ const Home = () => {
                           padding: "1rem",
                           color: index === 0 || index === 3 ? "white" : "black",
                           borderRadius: "0.25rem",
+                          width: "150%", // You can set a specific width here if needed
+                          minHeight: "50px",
                         }}
                       >
                         {text}
@@ -365,7 +372,12 @@ const Home = () => {
               <span style={{ color: "#4dc92e" }}>MEET NOW!</span>
             </p>
             <Footer />
-            <p className="text-gray-500 mt-4">
+            <p
+              style={{
+                color: "#1d53e7",
+                whiteSpace: "nowrap",
+              }}
+            >
               Copyright ©2022 MegaPersonals.eu
             </p>
           </div>
