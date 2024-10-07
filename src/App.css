@@ -1,0 +1,539 @@
+.h1 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* ////////////////////////// */
+
+.loginsignup {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: brown;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* App.css */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo and text/button */
+  padding: 10px 20px; /* Add padding around the header */
+
+  width: 100%;
+}
+
+.logo {
+  width: 120px; /* Default logo size */
+  height: auto;
+}
+
+.text-center {
+  flex-grow: 1;
+  text-align: center;
+  /* font-size: 1.5rem;  */
+  color: hsl(0, 0%, 20%);
+}
+
+.loginsignup {
+  background-color: brown; /* Button background */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginsignup:hover {
+  background-color: darkred; /* Darken button on hover */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    text-align: center;
+  }
+  .text-center span {
+    display: block; /* Makes each span a block-level element */
+  }
+  .logo {
+    width: 80px; /* Smaller logo on mobile */
+  }
+
+  .text-center {
+    font-size: 1.2rem; /* Adjust text size for mobile */
+    margin: 10px 0; /* Add some margin between logo and text */
+    line-height: 2.4;
+    white-space: normal; /* Allow text to wrap to multiple lines */
+  }
+  /* Create a two-column layout for the text in mobile view */
+
+  .loginsignup {
+    width: 150%; /* Make the button full-width on mobile */
+    padding: 10px;
+  }
+}
+
+input::placeholder {
+  font-size: 1.2rem;
+  color: hsl(220, 9%, 46%);
+}
+
+select {
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+.select-wrapper {
+  font-size: 1.2rem;
+}
+.search-button {
+  margin-left: 10px;
+  background-color: brown;
+  color: white;
+  padding: 2px 16px;
+  border-radius: 2px;
+}
+@media (max-width: 768px) {
+  .search-button {
+    background-color: transparent !important;
+    color: brown;
+    border: none;
+  }
+
+  .search-button i {
+    display: none; /* Hide the search icon */
+  }
+}
+.first-item {
+  color: #6b7280;
+}
+
+.other-item {
+  color: brown;
+}
+
+/* ///----------------------footer text in sign in page */
+/* styles.css or any relevant CSS file */
+.placeholder-large::placeholder {
+  font-size: 0.93rem; /* Adjust the size as needed */
+  color: #9ca3af; /* You can change the color here */
+}
+
+.text-gray-500 {
+  color: #1d53e7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Set the desired number of lines */
+  -webkit-box-orient: vertical;
+}
+.footer-link a {
+  color: #1d53e7;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer-link:not(:first-child)::before {
+  content: "";
+  border-left: 2px solid #155a75; /* Vertical line */
+  height: 100%; /* Full height of the column */
+  padding: 0 0.1rem; /* Spacing between line and text */
+}
+
+.location-buttons {
+  margin-left: 22%;
+  color: #c9862e;
+}
+
+.location-button {
+  background-color: #d68213;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.location-button:hover {
+  background-color: #c96b10;
+}
+
+.container-photo {
+  background-color: rgb(222, 228, 228);
+}
+
+div.p-4 {
+  padding: 0 !important;
+  border: none !important;
+}
+div.align-items-center {
+  align-items: initial !important;
+}
+
+.search-form-container {
+  background-color: hsl(0, 17%, 95%);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between;  */
+  /* align-items: center; */
+  gap: 5px;
+  margin-left: 13%;
+}
+
+.form-select,
+.form-input {
+  width: 100%;
+  max-width: 250px; /* Set a max width for inputs */
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 4px;
+  background-color: hsl(0, 17%, 95%);
+  box-sizing: border-box;
+}
+
+.search-button {
+  background-color: brown;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button i {
+  margin-left: 5px;
+}
+
+@media (max-width: 1024px) {
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-select,
+  .form-input,
+  .search-button {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-select,
+  .form-input,
+  .search-button {
+    width: 100%;
+  }
+
+  .search-button {
+    padding: 10px 0;
+  }
+}
+
+.search-button:hover {
+  background-color: darkred;
+}
+
+@media (min-width: 768px) {
+  .search-form {
+    flex-wrap: nowrap;
+  }
+
+  .form-select,
+  .form-input {
+    margin-bottom: 0;
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-form {
+    flex-wrap: wrap;
+  }
+
+  .form-select,
+  .form-input,
+  .search-button {
+    flex: 1 1 100%;
+  }
+}
+
+button {
+  background-color: brown;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+@media (min-width: 768px) {
+  .form-select,
+  .form-input {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+/* /////////////log in page design */
+/* App.css */
+
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.links a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.9rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+.input-group input::placeholder {
+  color: #888;
+}
+
+.show-password {
+  margin-bottom: 15px;
+}
+
+.show-password a {
+  color: brown;
+
+  font-size: 0.9rem;
+}
+
+.show-password a:hover {
+  text-decoration: underline;
+}
+
+.input-group button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background-color: #0056b3;
+}
+
+.password-help,
+.terms,
+.captcha {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+.password-help {
+  color: red;
+  font-weight: bold;
+}
+
+.terms a,
+.captcha a {
+  color: brown;
+  text-decoration: none;
+}
+
+.password-help a:hover,
+.terms a:hover,
+.captcha a:hover {
+  text-decoration: underline;
+}
+
+.first-time {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.first-time h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.first-time a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.first-time a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.white-option {
+  appearance: none;
+  background: white;
+}
+
+/* //////////////////////////////////////////// */
+/* Initially show the search form */
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-left: 13%;
+}
+/* Fancy search button for mobile view */
+.toggle-search-button {
+  background: linear-gradient(
+    90deg,
+    #ff7e5f,
+    #feb47b
+  ); /* Gradient background */
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  display: none; /* Initially hidden for web view */
+}
+
+/* Add a search icon inside the button */
+.toggle-search-button::before {
+  content: "\f002"; /* FontAwesome search icon */
+  font-family: "FontAwesome";
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+/* Hover effect: Enlarge slightly and change background */
+.toggle-search-button:hover {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Show the button only in mobile view */
+@media (max-width: 768px) {
+  .toggle-search-button {
+    display: block; /* Show the button in mobile view */
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Initially hide the search form in mobile view */
+  .search-form {
+    display: none;
+  }
+
+  /* Show the search form when clicked in mobile */
+  .search-form.show {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* For web view (larger than 768px), show the search form and hide the button */
+@media (min-width: 769px) {
+  .toggle-search-button {
+    display: none; /* Hide the button in web view */
+  }
+
+  .search-form {
+    display: flex; /* Show the search form in web view */
+  }
+}
